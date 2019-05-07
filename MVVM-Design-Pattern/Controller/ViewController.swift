@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         let image = UIImage(named: "swifty")!
         let swifty = Bird(name: "Swifty", rarity: .veryRare, image: image)
         
-        //We create a new instance from the view model class from the swifty object.
+        //We create a new instance from the view model class from the swifty object. If you find yourself needing to use data from a model class in views with different representations of the data it would make sense to use the MVVM pattern.
         let viewModel = BirdViewModel(bird: swifty)
         
         //We create a frame property and then initialize the BirdView using that frame.
